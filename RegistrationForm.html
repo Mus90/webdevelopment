@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title> 
+    </head>
+    <body>
+            <h1>Register</h1> 
+            <form>
+                <label for="firstname">First Name:</label>
+                <input name="first" id="firstname" type="text" placeholder="Mustafa" required>
+
+                <label for="lastname">Last Name:</label>
+                <input name="last" id="lastname" type="text" placeholder="Ali" required>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+            
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="text" required placeholder="Enter your email" required>
+
+                     <label for="password">Password:</label>
+                     <input name="password" id="password" type="text" required placeholder="Enter your password">
+                 </div>
+                 <div>
+                    <label for="birth">Birthday:</label>
+                <select name="month" id="birth" placeholder="Month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                </select>
+                <select name="day" placeholder="day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                <select name="year" placeholder="year">
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                </select>
+                 </div>
+
+                 <input type="submit">
+
+            </form>
+    </body>
+    
+</html>
