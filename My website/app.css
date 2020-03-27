@@ -1,9 +1,43 @@
-h1 {
-    color : Green
-
+body{
+    background: rgb(244, 242, 242);
+    max-width: 700px;
+    width: 80%;
+    margin-left: 0px auto ;
+    font-family: "Arial";
 }
 
-h3 
-{
-border: 2px solid black
+h1{
+    color : rgb(6, 66, 6);
+    padding-left: 50px; 
 }
+
+h2{
+    color : rgb(6, 66, 6);
+    padding-left: 200px; 
+}
+
+h3 {
+color : Green;
+border: 1px solid black;
+padding:10px;
+padding-left: 30px; 
+margin-left:50px;
+}
+
+li{
+    font-family: "Arial";
+    font-weight: 0px;
+    margin-left:50px;
+    padding: 4px;
+   
+   
+}
+pre{
+    margin-left:30px;
+}
+
+
+
+
+
+
