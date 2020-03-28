@@ -1,14 +1,32 @@
 body{
     background: rgb(244, 242, 242);
     max-width: 700px;
-    width: 80%;
+    width: 100%;
     margin-left: 0px auto ;
     font-family: "Arial";
 }
 
+img{
+    width: 150px;
+    float: right;
+    margin: 20 20 20px 20px;
+}
+p{
+    padding-left: 50px;
+    margin-block-start:0px;
+    margin-block-end:5px;
+    font-style: italic;
+}
+ul{
+    margin-block-start:0px;
+    margin-block-end:20px;
+}
+
+
 h1{
     color : rgb(6, 66, 6);
-    padding-left: 50px; 
+    padding-left: 50px;
+    
 }
 
 h2{
@@ -22,6 +40,7 @@ border: 1px solid black;
 padding:10px;
 padding-left: 30px; 
 margin-left:50px;
+margin-block-start:0px;
 }
 
 li{
@@ -35,7 +54,9 @@ li{
 pre{
     margin-left:30px;
 }
-
+div{
+    padding-block-start:0px;
+}
 
 
 
