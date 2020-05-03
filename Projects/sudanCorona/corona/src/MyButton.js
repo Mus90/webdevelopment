@@ -1,10 +1,12 @@
 import React from "react";
 import { Button } from "reactstrap";
 
-const newButton = () => {
+const newButton = (props) => {
   return (
     <div>
-      <Button color="primary">primary</Button>{" "}
+      <Button onClick={props.onClick} color="primary">
+        Switch Name
+      </Button>
     </div>
   );
 };
