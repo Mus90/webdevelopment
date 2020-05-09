@@ -4,7 +4,10 @@ import AddTodoForm from "./components/todos/AddTodoForm";
 
 export default class App extends Component {
   state = {
-    todos: [],
+    todos: [
+      { id: 1, content: "buy food" },
+      { id: 2, content: "Play soccer" },
+    ],
   };
 
   //define a function to add todo to the state and pass it to the Form as a method props
@@ -28,8 +31,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1> welcome</h1>
+      <div className="container">
+        <h1>Simple Todo List Application </h1>
         <Table todos={this.state.todos} deleteTodo={this.deleteTodoHandler} />
         <AddTodoForm addnewTodo={this.addNewTodoHandler} />
       </div>

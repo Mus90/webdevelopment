@@ -3,8 +3,7 @@ import { Form, Button } from "react-bootstrap";
 
 export default class AddTodoForm extends Component {
   state = {
-    todo: "",
-    todoStatus: "",
+    content: "",
   };
 
   // define function to change the state on every time the user change the input in the form
@@ -20,7 +19,7 @@ export default class AddTodoForm extends Component {
   submitHandler = (event) => {
     event.preventDefault(); // to prevent automatic submit of the form when refreshing the page
     this.props.addnewTodo(this.state); //call the function addnewTodo() and pass the current state which include the new form input
-    console.log(this.state);
+    this.setState({ content: "" }); //to refresh the input and make it empty after submit
   };
 
   render() {
@@ -31,21 +30,13 @@ export default class AddTodoForm extends Component {
             <Form.Label>Adding new Todo to the list: </Form.Label>
             <Form.Control
               type="text"
-              id="todo"
+              id="content"
               onChange={this.changeHandler}
               placeholder="Enter Your new Todo Here"
+              value={this.state.content} //to refresh the input and make it empty after submit
             />
           </Form.Group>
 
-          <Form.Group>
-            <Form.Label>todoStatus</Form.Label>
-            <Form.Control
-              type="text"
-              id="todoStatus"
-              onChange={this.changeHandler}
-              placeholder="Todo status"
-            />
-          </Form.Group>
           <Button variant="primary" type="submit">
             Submit
           </Button>

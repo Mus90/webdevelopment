@@ -1,12 +1,12 @@
 import React from "react";
+import { ListGroup } from "react-bootstrap";
 
 const Table = (props) => {
-  const { todos } = props;
-  const todoList = todos.map((eachTodo) => {
+  const todoList = props.todos.map((eachTodo) => {
     return (
-      <div className="todoItem" key={eachTodo.id}>
-        <div> todo: {eachTodo.todo}</div>
-        <div> todoStatus: {eachTodo.todoStatus} </div>
+      <div className="todoItem container" key={eachTodo.id}>
+        <ListGroup.Item> {eachTodo.content}</ListGroup.Item>
+
         <button
           onClick={() => {
             props.deleteTodo(eachTodo.id);
