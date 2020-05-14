@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
+import "./AddTodoForm.css";
 
 export default class AddTodoForm extends Component {
   state = {
@@ -37,7 +38,7 @@ export default class AddTodoForm extends Component {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button float="right" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
