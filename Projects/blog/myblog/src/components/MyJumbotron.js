@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .jumbo {
-    background-color: ;
+    margin-top: 80px;
   }
 `;
 

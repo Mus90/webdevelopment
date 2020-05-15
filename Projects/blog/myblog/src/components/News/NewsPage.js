@@ -1,7 +1,24 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import styled from "styled-components";
+
+const Styles = styled.div`
+  .news-pic {
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 5em;
+  }
+  .person-wrapper {
+    margin-bottom: 2em;
+  }
+`;
 
 const NewsPage = () => {
-  return <div>this is news page</div>;
+  return (
+    <Styles>
+      <Image src="/assets/books-in-library.jpg" fluid className="news-pic" />
+    </Styles>
+  );
 };
 
 export default NewsPage;
