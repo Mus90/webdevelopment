@@ -16,7 +16,7 @@ const Styles = styled.div`
 const HomePage = () => {
   return (
     <Styles>
-      <MyJumbotron className="jumbo" />
+      <MyJumbotron />
       <Container>
         <Row>
           <Col xs={12} lg={4} className="person-wrapper">

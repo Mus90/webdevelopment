@@ -6,7 +6,6 @@ const Styles = styled.div`
   .news-pic {
     width: 100%;
     margin-bottom: 2em;
-    margin-top: 5em;
   }
   .person-wrapper {
     margin-bottom: 2em;
