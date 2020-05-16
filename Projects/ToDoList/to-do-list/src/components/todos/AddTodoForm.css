@@ -1,3 +1,17 @@
 .mybutton {
   background-color: red;
 }
+
+.myItem {
+  width: 500px;
+}
+
+.myForm {
+  margin-top: 10px;
+}
+#myLabel {
+  margin-top: 40px;
+}
+#content {
+  width: 600px;
+}

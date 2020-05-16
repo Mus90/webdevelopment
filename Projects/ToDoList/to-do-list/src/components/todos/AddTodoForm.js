@@ -28,7 +28,7 @@ export default class AddTodoForm extends Component {
       <div>
         <Form onSubmit={this.submitHandler}>
           <Form.Group>
-            <Form.Label>Adding new Todo to the list: </Form.Label>
+            <Form.Label id="myLabel">Adding new Todo to the list: </Form.Label>
             <Form.Control
               type="text"
               id="content"
@@ -38,7 +38,7 @@ export default class AddTodoForm extends Component {
             />
           </Form.Group>
 
-          <Button float="right" variant="primary" type="submit">
+          <Button className="mybutton" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
