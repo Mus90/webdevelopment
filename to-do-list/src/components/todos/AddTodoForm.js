@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./AddTodoForm.css";
+import axios from "../API";
 
 export default class AddTodoForm extends Component {
   state = {
@@ -21,6 +22,7 @@ export default class AddTodoForm extends Component {
     event.preventDefault(); // to prevent automatic submit of the form when refreshing the page
     this.props.addnewTodo(this.state); //call the function addnewTodo() and pass the current state which include the new form input
     this.setState({ content: "" }); //to refresh the input and make it empty after submit
+    axios.post("/todos.json", this.state);
   };
 
   render() {

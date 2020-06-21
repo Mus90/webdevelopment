@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, Container, Row, Col } from "react-bootstrap";
+import { Button, ListGroup, Container, Row, Col } from "react-bootstrap";
 import "./AddTodoForm.css";
 
 const Table = (props) => {
@@ -15,14 +15,14 @@ const Table = (props) => {
               </ListGroup.Item>
             </Col>
             <Col>
-              <button
-                className="mybutton"
+              <Button
+                className="btn-danger"
                 onClick={() => {
                   props.deleteTodo(eachTodo.id);
                 }}
               >
                 Delete{" "}
-              </button>
+              </Button>
             </Col>
           </Row>
         </Container>
